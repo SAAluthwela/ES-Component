@@ -1,7 +1,16 @@
-import "./App.css";
+import "./app.css";
+import Searchbar from "./components/searchbar/Searchbar";
+import Topbar from "./components/topbar/Topbar";
 
 function App() {
-  return <div className="App">App</div>;
+  return (
+    <div className="App">
+      <Topbar />
+      <div className="container">
+        <Searchbar />
+      </div>
+    </div>
+  );
 }
 
 export default App;

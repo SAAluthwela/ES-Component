@@ -1,0 +1,49 @@
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40vh;
+}
+
+.inputbox {
+  width: 1000%;
+  height: 60px;
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background-color: darkcyan;
+  font-size: 20px;
+  color: rgb(224, 221, 17);
+  border: 1px solid black;
+  border-left: 2px;
+  border-radius: 0 20px 20px 0;
+  padding: 5px;
+  padding-right: 8px;
+  cursor: pointer;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  transition: 0.2s all;
+}
+
+button:hover {
+  background-color: rgb(122, 214, 86);
+}
+
+button:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+
+input {
+  height: 36px;
+  width: 25vw;
+  padding-left: 20px;
+  border: 1px solid black;
+  border-radius: 20px 0 0 20px;
+  font-size: 20px;
+}
