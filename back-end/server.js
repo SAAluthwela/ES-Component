@@ -9,6 +9,16 @@ app.use(
   })
 );
 
+//added
+
+app.get("/", (req, res) => {
+  res.send("welcome to port 3333");
+});
+
+app.post("/", (req, res) => {
+  res.json(req.body);
+});
+
 // searching on query
 app.get("/search/:index/:type", async (req, res) => {
   const { phraseSearch } = require("./SearchEngine");
