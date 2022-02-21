@@ -6,11 +6,28 @@ import Table from "../table/Table";
 export default function Searchbar() {
   const [query, setQuery] = useState("");
 
+  const keys = ["first_name", "last_name", "email"];
+
+  //map 03 attributes usin keys array and some() method
   const search = (data) => {
-    return data.filter((item) => item.first_name.toLowerCase().includes(query));
+    return data.filter((item) =>
+      keys.some((keys) => item[keys].toLowerCase().includes(query))
+    );
   };
 
-  // console.log(query);
+  // console.log(Users[0]["first_name"]);
+
+  //older version of search
+  //here there are 03 distinct search keys
+  /*
+   const search = (data) => {
+    return data.filter(
+      (item) =>
+        item.first_name.toLowerCase().includes(query) ||
+        item.last_name.toLowerCase().includes(query) ||
+        item.email.toLowerCase().includes(query)
+    );
+  };*/
 
   // console.log(
   //   Users.filter((user) => user.first_name.toLowerCase().includes("fe"))
