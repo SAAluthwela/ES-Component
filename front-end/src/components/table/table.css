@@ -1,0 +1,16 @@
+table {
+  width: 50%;
+  margin-left: 25vw;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+}
+
+td {
+  padding-left: 10px;
+  padding-right: 0;
+}
